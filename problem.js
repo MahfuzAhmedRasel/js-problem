@@ -61,7 +61,7 @@ function budgetCalculator(gori, phone, laptop) {
      }
         // Mega Friend
 
-     function megaFrieng(friends){
+     function megaFriend(friends){
         longFriendsName = friends[0];
 
         for(var i =0; i < friends.length; i++){
