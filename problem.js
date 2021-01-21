@@ -60,5 +60,19 @@ function budgetCalculator(gori, phone, laptop) {
         }
      }
    
-     var mahfuz = hotelCost(21);
-     console.log(mahfuz);
+        // Mega Friend
+
+     function megaFrieng(friends){
+        longFriendsName = friends[0];
+
+        for(var i =0; i < friends.length; i++){
+            if(longFriendsName.length < friends[i].length){
+                longFriendsName = friends[i];
+            }
+        }
+        return longFriendsName;
+     }
+
+     var rasel = ['rasel', 'mahfuz', 'ahmed', 'MahfuzAhemd'];
+     var rasel1 = megaFrieng(rasel);
+     console.log(rasel1);
