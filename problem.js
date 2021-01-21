@@ -59,7 +59,6 @@ function budgetCalculator(gori, phone, laptop) {
            return totalCost = regulerCost + offerCost + bigOfferCost
         }
      }
-   
         // Mega Friend
 
      function megaFrieng(friends){
@@ -72,7 +71,3 @@ function budgetCalculator(gori, phone, laptop) {
         }
         return longFriendsName;
      }
-
-     var rasel = ['rasel', 'mahfuz', 'ahmed', 'MahfuzAhemd'];
-     var rasel1 = megaFrieng(rasel);
-     console.log(rasel1);
