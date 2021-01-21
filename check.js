@@ -28,9 +28,41 @@ function budgetCalculator(gori, phone, laptop) {
         totalPrice = gori*goriPrice + phone*phonePrice + laptop*laptopPrice;
         return totalPrice;
     }
-    
+  }
+  var res =budgetCalculator(0, 1, 1);
+  console.log(res);
+
+ function hotelCost(days){
+     var totalCost = 0;
+     var  regulerPrice = 100;
+     var  getDiscount = 80;
+     var  bigDiscount = 50;
+
+     if(days <= 0){
+        console.log("Something is wrong Sir");
+     }
+     else if(days <= 10){
+       return totalCost = days * regulerPrice;
+     }
+     else if(days <= 20){
+        var regulerCost = 10 * regulerPrice;
+        var longDays = days - 10;
+        var offerCost = longDays * 80;
+
+        return totalCost = regulerCost + offerCost;
+     }
+     else{
+        var regulerCost = 10 * regulerPrice;
+        var offerCost = 10 * getDiscount;
+        var longDays = days - 20;
+        var bigOfferCost = longDays * bigDiscount;
+
+        return totalCost = regulerCost + offerCost + bigOfferCost
+     }
+
 
   }
-  var res =budgetCalculator(0, -1, 1);
-  console.log(res);
+
+  var mahfuz = hotelCost(21);
+  console.log(mahfuz);
  
