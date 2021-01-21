@@ -12,4 +12,19 @@ function kilometerToMeter(kilometer){
         return meter;
     }
 }
+    // Budget Calculator
 
+function budgetCalculator(gori, phone, laptop) {
+    var totalPrice = 0;
+    var goriPrice = 50;
+    var phonePrice = 100;
+    var laptopPrice = 500;
+    
+    if(gori < 0 || phone < 0 || laptop < 0){
+        console.log("Missing Something, Plesae check Agin");
+    }
+    else{
+        totalPrice = gori*goriPrice + phone*phonePrice + laptop*laptopPrice;
+        return totalPrice;
+    }
+  }
